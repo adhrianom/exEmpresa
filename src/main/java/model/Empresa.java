@@ -6,14 +6,14 @@ public class Empresa {
     private String endereco;
     private String cidade;
     private String estado;
-    private int cep;
-    private int fone;
+    private String cep;
+    private String fone;
 
     public Empresa() {
         
     }
 
-    public Empresa(String nome, String endereco, String cidade, String estado, int cep, int fone) {
+    public Empresa(String nome, String endereco, String cidade, String estado, String cep, String fone) {
         this.nome = nome;
         this.endereco = endereco;
         this.cidade = cidade;
@@ -54,19 +54,19 @@ public class Empresa {
         this.estado = estado;
     }
 
-    public int getCep() {
+    public String getCep() {
         return cep;
     }
 
-    public void setCep(int cep) {
+    public void setCep(String cep) {
         this.cep = cep;
     }
 
-    public int getFone() {
+    public String getFone() {
         return fone;
     }
 
-    public void setFone(int fone) {
+    public void setFone(String fone) {
         this.fone = fone;
     }
     
@@ -75,8 +75,8 @@ public class Empresa {
        setEndereco(JOptionPane.showInputDialog("Qual a sua rua?"));
        setCidade(JOptionPane.showInputDialog("Qual sua cidade?"));
        setEstado(JOptionPane.showInputDialog("Qual seu estado?"));
-       setCep(Integer.parseInt(JOptionPane.showInputDialog("Qual seu CEP?")));
-       setFone(Integer.parseInt(JOptionPane.showInputDialog("Qual é seu número de telefone?")));
+       setCep(JOptionPane.showInputDialog("Qual seu CEP?"));
+       setFone(JOptionPane.showInputDialog("Qual é seu número de telefone?"));
    }
     
    public void imprimir(){
